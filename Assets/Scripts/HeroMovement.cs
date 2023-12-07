@@ -29,7 +29,7 @@ public class HeroMovement : MonoBehaviour
     void MoveCharacter()
     {
         myRigidBody.MovePosition(
-            transform.position + change * speed * Time.deltaTime
+            transform.position + speed * Time.deltaTime * change
             );
     }
 }
